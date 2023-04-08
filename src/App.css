@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'mr_izax';
+  src: local('mr_izax'),
+    url('./fonts/mr_izax_izax.ttf') format('truetype');
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'mr_izax_Thin';
+  src: local('mr_izax_Thin'),
+    url('./fonts/mr_izax_Thin.ttf') format('truetype');
+  font-weight: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.izax-Thin{
+  font-family: 'mr_Izax_Thin';
+  font-style: normal;
+  font-weight: 100;
+}
+
+body{
+  background-image: url('arbat4.png');
+  background-repeat:  no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.white{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+}
+
+h2{
+  color: white;
+  font-family: 'mr_Izax';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vw;
+  letter-spacing: -0.035em;
+  margin-top: 0px;
+  margin-bottom: 0;
+  margin-right: 9%;
+}
+
+.header__text{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.black{
+  color: black;
+}
+
+.navlist{
+  display: flex;
+  margin-left: 5%;
+}
+
+.navlist__element{
+  font-family: 'mr_Izax_Thin';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: center;
+  border: none;
+  background: none;
+  margin-right: 50px;
+}
+
+.navlist__element-text{
+  color: white;
+}
+
+.content__text{
+  margin-left: 40px;
+  font-size: 3vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 800px;
+}
+
+footer{
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  margin-left: 50px;
+  bottom: 0;
+}
+.footer__adress{
+  font-size: 3vw;
+  width: 90%;
+}
+.footer__number{
+  font-size: 3vw;
+}
+.footer__ID{
+  font-size: 3vw;
+}
+.footer__working-hours{
+  font-size: 3vw;
+
+}
+.footer__right{
+  width: 20%;
+}
+@media only screen and (max-width: 1165px) {
+  h2{
+    color: white;
+    mix-blend-mode: normal;
   }
-  to {
-    transform: rotate(360deg);
+  .header__text{
+    display: flex;
+    padding-top: 50px;
   }
 }

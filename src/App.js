@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import MainContent from './Components/MainContent';
+import Footer from './Components/Footer';
+
+const list = [
+  {
+      name:'Ремонт техники',
+      color:'white',
+  },
+  {
+      name:'Ремонт одежды',
+      color:'white',
+  },
+  {
+      name:'Ремонт обуви',
+      color:'black',
+  },
+  {
+      name:'Ремонт сумок',
+      color:'black',
+  },
+]
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+      <Header data = {list}/>
+      <MainContent data = {list}/>
+      <Footer/>
     </div>
   );
 }
