@@ -53,17 +53,21 @@ h2{
   font-family: 'mr_Izax';
   font-style: normal;
   font-weight: 400;
-  font-size: 6vw;
+  
   letter-spacing: -0.035em;
   margin-top: 0px;
   margin-bottom: 0;
   margin-right: 9%;
+  max-width: 1100px;
+  font-size: 12vmin;
 }
 
 .header__text{
   display: flex;
   justify-content: flex-end;
 }
+
+
 
 .black{
   color: black;
